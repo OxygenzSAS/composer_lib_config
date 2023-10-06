@@ -1,0 +1,39 @@
+# config
+Une classe de gestion de fichier de configuration pour mon framework
+
+## Utilisation
+
+Initialisation au plus tôt dans le code
+```php
+// initialise le singleton de configuration
+\OxygenzSAS\Config\Config::getInstance(__DIR__.'/config/config.php');
+```
+
+Recuperation d'une valeur
+```php
+\OxygenzSAS\Config\Config::getInstance()->getSetting('db_pass');
+```
+ou
+```php
+\OxygenzSAS\Config\Config::getInstance()->get('db_pass');
+```
+
+## Exemple de fichier de config
+```php
+<?php
+
+return array(
+
+    // Environnement
+    "ENV"   => 'DEV', // DEV / PROD
+
+    // BDD
+    "db_user" => 'root',
+    "db_pass" => 'root',
+    "db_host" => 'localhost',
+    "db_name" => 'mabase'
+
+);
+```
+
+

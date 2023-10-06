@@ -1,0 +1,18 @@
+{
+    "name": "oxygenzsas/composer_lib_config",
+    "description": "Une classe de gestion de fichier de config",
+    "license": "MIT",
+    "keywords": ["config"],
+    "authors": [
+        {
+            "name": "nvanhaezebrouck",
+            "email": "nicolas@oxygenz.fr"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "OxygenzSAS\\Config\\" : "src/"
+        }
+    },
+    "require": {}
+}
